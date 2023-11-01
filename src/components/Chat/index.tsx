@@ -3,8 +3,11 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Chat',
-  props: {},
   setup() {
-    return ()=> <div>1123123123</div>
+    return () => (
+      <div class="flex p-[10px] h-full">
+        1
+      </div>
+    )
   }
 })
