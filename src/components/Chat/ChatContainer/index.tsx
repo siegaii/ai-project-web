@@ -1,6 +1,6 @@
 import ChatContent from '@/components/Chat/ChatContent'
 import ChatList from '@/components/Chat/ChatList'
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 const roles = [
   {
@@ -23,10 +23,13 @@ const roles = [
 export default defineComponent({
   name: 'ChatContainer',
   setup() {
+    const active = ref(roles[0])
     return () => (
       <div class="flex h-full">
         <div class="w-[240px]" style={{ 'border-right': '1px solid rgb(228, 231, 237)' }}>
-          <ChatList data={roles} active='1'/>
+          <ChatList data={roles} defaultActive={active.value} onClick={(item)=> {
+            active.value = item.id
+          }} />
         </div>
         <div class="w-full">
           <ChatContent />
