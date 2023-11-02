@@ -1,6 +1,6 @@
 import { defineComponent, ref } from 'vue'
 import './ChatTextarea.scss'
-import { ElInput } from 'element-plus'
+import { ElInput, ElTooltip } from 'element-plus'
 import '../assets/font_4313692_rap6qvzof9/iconfont.js'
 
 export default defineComponent({
@@ -9,10 +9,16 @@ export default defineComponent({
     const text = ref('')
     return () => (
       <div class="w-full relative chat-textarea">
-        <div class="send-icon absolute right-[6px] bottom-[7px]">
-          <svg class="icon" aria-hidden="true">
-            <use xlinkHref="#icon-send"></use>
-          </svg>
+        <div class="send-icon">
+          <ElTooltip
+            class="box-item"
+            effect="dark"
+            content="发送"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use xlinkHref="#icon-send"></use>
+            </svg>
+          </ElTooltip>
         </div>
         <ElInput
           class="rounded-[10px] "

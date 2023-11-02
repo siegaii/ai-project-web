@@ -18,7 +18,7 @@ export default defineComponent({
           class="chat-content-header flex w-full justify-center items-center p-3.5"
           style={{ 'border-bottom': '1px solid rgb(238, 238, 238)' }}
         >
-          <div class="w-[32px] mr-2">
+          <div class="w-[32px] mr-2 flex">
             <ElAvatar shape="square" size="small" src={aiBot.avatar} />
           </div>
           <div>{aiBot.name}</div>
