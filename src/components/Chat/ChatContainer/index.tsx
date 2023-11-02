@@ -31,7 +31,7 @@ export default defineComponent({
             active.value = item
           }} />
         </div>
-        <div class="w-full">
+        <div class="w-full" >
           <ChatContent key={active.value.id} aiBot={active.value}/>
         </div>
       </div>
