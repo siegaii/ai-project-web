@@ -25,7 +25,7 @@ export default defineComponent({
         <div>
           {data.map((item) => (
             <div
-              class={`flex items-center cursor-pointer p-2 hover:bg-[#f2f3f5] ${
+              class={`mb-2 rounded-[8px] mx-3 flex items-center cursor-pointer p-2 hover:bg-[#f2f3f5] ${
                 item.id === active.value.id ? 'bg-[#f2f3f5]' : ''
               }`}
               onClick={() => {
