@@ -26,7 +26,7 @@ export default defineComponent({
     return () => (
       <div class="flex h-full">
         <div class="w-[240px]" style={{ 'border-right': '1px solid rgb(228, 231, 237)' }}>
-          <ChatList data={roles} />
+          <ChatList data={roles} active='1'/>
         </div>
         <div class="w-full">
           <ChatContent />
