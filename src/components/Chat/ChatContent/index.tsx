@@ -26,10 +26,7 @@ export default defineComponent({
         <div class="flex flex-1 justify-center">
           <div class="max-w-[790px] w-full h-full relative">
             <div class="chat-content-body ">body</div>
-            <div
-              class="chat-content-footer absolute left-0 right-0 bottom-0 py-4 flex justify-center"
-              style={{ border: '1px solid blue' }}
-            >
+            <div class="chat-content-footer absolute left-0 right-0 bottom-0 py-4 flex justify-center">
               <div class="mb-1 w-full">
                 <div class="mx-2 ">
                   <ChatInputPanel />
